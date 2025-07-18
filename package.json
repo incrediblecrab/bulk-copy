@@ -1,0 +1,124 @@
+{
+  "name": "bulk-copy",
+  "displayName": "Bulk Copy",
+  "description": "Copy file and folder structure with customizable formatting",
+  "version": "0.0.1",
+  "publisher": "maxs-lab-of-things",
+  "homepage": "https://mlot.ai",
+  "author": {
+    "name": "Max Marquardt",
+    "url": "https://mlot.ai"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "private"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "icon": "images/icon.png",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bulk-copy.copyStructure",
+        "title": "Copy Structure"
+      },
+      {
+        "command": "bulk-copy.openSettings",
+        "title": "Bulk Copy: Open Settings"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "bulk-copy.copyStructure",
+          "group": "5_cutcopypaste@30"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Bulk Copy",
+      "properties": {
+        "bulk-copy.maxDepth": {
+          "type": "number",
+          "default": 1,
+          "description": "Maximum depth to copy folder structure (1 = immediate children only)"
+        },
+        "bulk-copy.indentCharacter": {
+          "type": "string",
+          "default": "- ",
+          "description": "Character to use for indentation (e.g., '- ', '#', '*')"
+        },
+        "bulk-copy.indentSize": {
+          "type": "number",
+          "default": 1,
+          "description": "Number of indent characters per level"
+        },
+        "bulk-copy.includeRootFolder": {
+          "type": "boolean",
+          "default": false,
+          "description": "Include the root folder in the copied structure"
+        },
+        "bulk-copy.includeFullPath": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show full paths for all items instead of relative names"
+        },
+        "bulk-copy.pathSeparator": {
+          "type": "string",
+          "default": "/",
+          "description": "Path separator character (e.g., '/', '\\', '>')"
+        },
+        "bulk-copy.includeFiles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include files in the copied structure"
+        },
+        "bulk-copy.includeFolders": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include folders in the copied structure"
+        },
+        "bulk-copy.fileExtensions": {
+          "type": "string",
+          "default": "",
+          "description": "Filter files by extensions (comma-separated, e.g., 'js,ts,json'). Leave empty for all files."
+        },
+        "bulk-copy.includeHidden": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include hidden files and folders (starting with .)"
+        },
+        "bulk-copy.maxItemsPerLevel": {
+          "type": "number",
+          "default": 1000,
+          "minimum": 100,
+          "maximum": 10000,
+          "description": "Maximum files/folders to process per directory level (100-10000). Higher values may impact performance."
+        },
+        "bulk-copy.maxTotalItems": {
+          "type": "number",
+          "default": 10000,
+          "minimum": 1000,
+          "maximum": 100000,
+          "description": "Maximum total items to process (1000-100000). WARNING: Very high values may cause VS Code to freeze or crash."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  }
+}
