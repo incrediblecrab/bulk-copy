@@ -1,6 +1,11 @@
 # Bulk Copy
 
+![Version](https://img.shields.io/visual-studio-marketplace/v/maxs-lab-of-things.bulk-copy)
+![MLoT](https://img.shields.io/badge/MLoT-ai-blue)
+
 A lightweight VS Code extension that allows you to copy file and folder structures with customizable formatting.
+
+![Demo](https://raw.githubusercontent.com/incrediblecrab/Packages-and-Extensions-Media/main/bulk-copy.gif)
 
 ## Features
 
@@ -17,8 +22,14 @@ A lightweight VS Code extension that allows you to copy file and folder structur
 
 ## Installation
 
-### From VSIX file (Recommended)
-1. Download the `bulk-copy-0.0.1.vsix` file
+### From VS Code Marketplace
+1. Open VS Code
+2. Go to Extensions view (`Cmd+Shift+X` or `Ctrl+Shift+X`)
+3. Search for "Bulk Copy"
+4. Click Install
+
+### From VSIX file
+1. Download the `bulk-copy-1.5.0.vsix` file
 2. Open VS Code
 3. Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux)
 4. Type "Extensions: Install from VSIX..."
@@ -264,17 +275,16 @@ A lightweight VS Code extension that allows you to copy file and folder structur
 - **Truncated output**: Increase `maxItemsPerLevel` or `maxTotalItems` settings
 - **VS Code freezing**: Reduce depth and limit settings, restart VS Code
 
-## Production Ready
+## Resources
 
-This extension is production-ready with:
-- ✅ Stable error handling and permission management
-- ✅ Safe defaults preventing performance issues
-- ✅ Input validation on all settings
-- ✅ Progress notifications for long operations
-- ✅ No external dependencies or network calls
-- ✅ Follows VS Code extension best practices
+- 📺 [Watch Demo Video](https://youtu.be/zXDzlkejjMo)
+- 🌐 [Visit MLoT Page](https://mlot.ai/bulk-copy/)
+- 🔒 [Privacy Policy](https://mlot.ai/privacy)
 
-Version: 0.0.1 - Initial stable release
+## Publisher
+
+**Max's Lab of Things**
+Visit [mlot.ai](https://mlot.ai/)
 
 ## Requirements
 
@@ -287,8 +297,10 @@ None at this time. Please report any issues you encounter.
 
 ## Release Notes
 
-### 0.0.1 - Initial Release
+### 1.5.0 - Standardization Update
+- Standardizing and adding media
 
+### 0.0.1 - Initial Release
 - Copy file and folder structures with right-click
 - Configurable depth, formatting, and filtering options
 - Safe defaults with performance limits

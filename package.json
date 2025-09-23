@@ -2,7 +2,7 @@
   "name": "bulk-copy",
   "displayName": "Bulk Copy",
   "description": "Copy file and folder structure with customizable formatting",
-  "version": "0.0.1",
+  "version": "1.5.0",
   "publisher": "maxs-lab-of-things",
   "homepage": "https://mlot.ai",
   "author": {
@@ -17,7 +17,9 @@
   "engines": {
     "vscode": "^1.74.0"
   },
-  "categories": ["Other"],
+  "categories": [
+    "Other"
+  ],
   "icon": "images/icon.png",
   "activationEvents": [],
   "main": "./out/extension.js",
