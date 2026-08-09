@@ -275,17 +275,6 @@ A lightweight VS Code extension that allows you to copy file and folder structur
 - **Truncated output**: Increase `maxItemsPerLevel` or `maxTotalItems` settings
 - **VS Code freezing**: Reduce depth and limit settings, restart VS Code
 
-## Resources
-
-- 📺 [Watch Demo Video](https://youtu.be/zXDzlkejjMo)
-- 🌐 [Visit MLoT Page](https://mlot.ai/bulk-copy/)
-- 🔒 [Privacy Policy](https://mlot.ai/privacy)
-
-## Publisher
-
-**Max's Lab of Things**
-Visit [mlot.ai](https://mlot.ai/)
-
 ## Requirements
 
 - VS Code version 1.74.0 or higher
@@ -307,3 +296,18 @@ None at this time. Please report any issues you encounter.
 - Full path and relative name support
 - Hidden file inclusion options
 - Progress notifications for large operations
+
+## Resources
+
+- 📺 [Watch Demo Video](https://youtu.be/zXDzlkejjMo)
+- 🌐 [Visit MLoT Page](https://mlot.ai/bulk-copy/)
+- 🔒 [Privacy Policy](https://mlot.ai/privacy)
+
+## Publisher
+
+**Max's Lab of Things**
+Visit [mlot.ai](https://mlot.ai/)
+
+## License
+
+MIT

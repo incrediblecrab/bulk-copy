@@ -2,7 +2,7 @@
   "name": "bulk-copy",
   "displayName": "Bulk Copy",
   "description": "Copy file and folder structure with customizable formatting",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "publisher": "maxs-lab-of-things",
   "homepage": "https://mlot.ai",
   "author": {
