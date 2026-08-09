@@ -5,7 +5,7 @@
 
 A lightweight VS Code extension that allows you to copy file and folder structures with customizable formatting.
 
-![Demo](https://raw.githubusercontent.com/incrediblecrab/Packages-and-Extensions-Media/main/gifs/bulk-copy.gif)
+![Demo](https://raw.githubusercontent.com/incrediblecrab/mlot-developer-media/main/gifs/bulk-copy.gif)
 
 ## Features
 
